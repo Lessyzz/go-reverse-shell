@@ -30,7 +30,7 @@ func handle(conn net.Conn) {
 
 func main() {
 	var addr string
-	flag.StringVar(&addr, "addr", "0.0.0.0:1337", "specify address and port to listen on")
+	flag.StringVar(&addr, "addr", "0.0.0.0:4444", "specify address and port to listen on")
 	flag.Parse()
 
 	listener, err := net.Listen("tcp", addr)
